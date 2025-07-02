@@ -10,3 +10,14 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+##  Enabling Real-Time Flight Data
+
+By default, the app uses dummy flight data to ensure smoother development and avoid API rate limits or CAPTCHA blocks.
+
+To enable **real-time flight results from the Sky-Scrapper API**, follow these steps:
+
+1. Open the file where the `USE_DUMMY` flag is set (in `SearchContext.jsx`).
+   const useDummyData = true;
+   once it will false and if the authorized api key will call it will show the real time data 
